@@ -2,7 +2,7 @@ const inquirer = required('inquirer');
 const fs = require('fs');
 const util = require('util');
 
-const api = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // array of questions for user
 const questions = [
@@ -54,8 +54,32 @@ const questions = [
             return true;
         }
     },
-    
-
+    {
+        type: 'input',
+        message: "If applicable, describe the steps to install your application",
+        name: 'installation',
+    },
+    {
+        type: 'input',
+        message: 'Provide information for the Usage section of the ReadMe, inculding examples and instructions',
+        name: 'usage',
+    },
+    {
+        type: 'input',
+        message: 'If applicable, provide instructions and guidelines on how others can contribute to your application',
+        name: 'contributing',
+    },
+    {
+        type: 'input',
+        message: "Provide information on any applicable tests for the application and how to use them",
+        name: 'tests',
+    },
+    {
+        type: 'list',
+        message: 'Choose a license for your project',
+        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        name: 'license',
+    },
 ];
 
 // function to write README file
