@@ -14,7 +14,9 @@ To use this application type 'node index.js' in the terminal. This will initiate
 
 Below is a link to a video demonstrating how to use this application:
 
-[Walkthrough Video](https://drive.google.com/file/d/11-49bQHYiqt7Gjj1KwSxzVUWz9NU6_l9/view)
+[Walkthrough Video](https://drive.google.com/file/d/11-49bQHYiqt7Gjj1KwSxzVUWz9NU6_l9/view?usp=sharing)
+
+
 
 
 
