@@ -1,9 +1,5 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
-
-// const writeFileAsync = util.promisify(writeToFile);
-
 
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
@@ -100,10 +96,11 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, err => {
+        // if there is an error, this will show in the console
         if (err) {
             return console.log(err);
         }
-
+        // message to display once the file is generated
         console.log("Hooray! Your README.md file has been generated successfully!")
     });
 }
@@ -111,8 +108,10 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
+    // calls the inquirer module
     inquirer
         .prompt(questions)
+        // after the user answers the questions, the answers are used to write the readme file
         .then(function(answers){
             console.log(answers);
             //call the data 
