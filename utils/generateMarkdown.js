@@ -3,7 +3,7 @@
 function generateMarkdown(data) {
 
   
-  return `# Readme Test: ${data.title}
+  return `# ${data.title}
 
   ![license](https://img.shields.io/badge/license-${data.license}-green)
 
