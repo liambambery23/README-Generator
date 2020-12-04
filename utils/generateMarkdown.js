@@ -19,6 +19,8 @@ function generateMarkdown(data) {
 
   ## Installation: 
 
+  [GitHub Repository](https://github.com/${data.username}/${data.repository})
+
   ${data.installation}
 
   ## Usage: 
