@@ -76,7 +76,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide information for the Usage section of the ReadMe, inculding examples and instructions',
+        message: 'Provide information for the Usage section of the ReadMe, inculding examples and instructions on how to use the application',
         name: 'usage',
     },
     {
@@ -115,7 +115,6 @@ function init() {
         .prompt(questions)
         .then(function(answers){
             console.log(answers);
-            //once I get my data, what do I do next
             //call the data 
             console.log(generateMarkdown(answers));
             //write into the file
