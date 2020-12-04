@@ -1,7 +1,7 @@
 # README-Generator
 
 ## Description
-This project is A README Generator that uses Node.JS in the command line to generate a functioning README file for a user based on a variety of prompts.
+This project is A README Generator that uses Node.JS in the command line to generate a functioning README file for a user based on a variety of prompts. Take a look at the [`Example-README.md`](assets/Example-README.md) to see an example of a README file that was generated using this application.
 
 ## Motivation
 I created this project to simplify the Readme writting process for users so that they can devote more time to development of their project.
